@@ -4,9 +4,10 @@ close all;
 warning off;
 
 addpath(genpath('./.'));
-addpath(genpath('/home/../caffe/')) ;
+addpath(genpath('../caffe/')) ;
 
-caffe.set_mode_gpu();
+%caffe.set_mode_gpu();
+caffe.set_mode_cpu();
 caffe.set_device(0);
 
 folder  = 'Model/';
